@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="w-50 m-auto shadow-lg p-3 bg-transparent my-5">
+    <h2>CRUD System</h2>
+<label for="prouductName" class="my-3">prouductName</label>
+<input type="text"id="prouductName"class="form-control my-2">
+<label for="prouductCategory" class="my-3">prouductCategory</label>
+<input type="text"id="prouductCategory"class="form-control my-2">
+<label for="prouductPrice" class="my-3">prouductPrice</label>
+<input type="number"id="prouductPrice"class="form-control my-2">
+<label for="Description" class="my-3">prouductDescription</label>
+<textarea class="form-control" id="Description" cols="30" rows="7"></textarea>
+<button id="addProuductBtn" onclick="addprouduct()"class="btn btn-outline-danger my-2 btn-lg w-100 bg-info">add</button>
+<button id="updateProuductBtn" onclick="updateProuducts()" class="btn btn-outline-danger d-none my-2 btn-lg w-100 bg-warning">Update</button>
+
+</div>
+
+<div class="w-50 m-auto my-5 shadow">
+
+    <input id="searchInput"onkeyup="search()" class="form-control w-50 mx-auto bg-light"placeholder="searchHere">
+    <table class="table table-striped table-hover text-center">
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Delete</th>
+        <th>Update</th>
+        
+
+    </thead>
+    <tbody id="tbody">
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
